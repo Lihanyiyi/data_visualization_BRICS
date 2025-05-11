@@ -15,23 +15,23 @@ const FinalProject = () => {
 
   useEffect(() => {
     let countrySet = new Set();
-    // Load line chart data
-    d3.csv("/linechart_country.csv").then((data) => {
-      const processedLineData = data.map((d) => ({
+    Promise.all([
+      d3.csv("/linechart_country.csv"),
+      d3.csv("/linechart_risk_average_val1.csv"),
+    ]).then(([countryData, riskData]) => {
+      // 处理 country 数据
+      const processedCountryData = countryData.map((d) => ({
         ...d,
         year: +d.year,
         val: +d.val,
-        type: d.type,
+        type: "country",
         metrics: d.metrics,
         location: d.location,
         cause: d.cause,
       }));
-      setLineData(processedLineData);
-    });
 
-    // Load line chart risk average data
-    d3.csv("/linechart_risk_average_val1.csv").then((data) => {
-      const processedRiskData = data.map((d) => ({
+      // 处理 risk 数据
+      const processedRiskData = riskData.map((d) => ({
         ...d,
         year: +d.year,
         val: +d.val,
@@ -39,8 +39,36 @@ const FinalProject = () => {
         metrics: d.metrics,
         cause: d.cause,
       }));
-      setLineData((prevData) => [...prevData, ...processedRiskData]);
+
+      // 合并数据
+      setLineData([...processedCountryData, ...processedRiskData]);
     });
+    // // Load line chart data
+    // d3.csv("/linechart_country.csv").then((data) => {
+    //   const processedLineData = data.map((d) => ({
+    //     ...d,
+    //     year: +d.year,
+    //     val: +d.val,
+    //     type: d.type,
+    //     metrics: d.metrics,
+    //     location: d.location,
+    //     cause: d.cause,
+    //   }));
+    //   setLineData(processedLineData);
+    // });
+
+    // // Load line chart risk average data
+    // d3.csv("/linechart_risk_average_val1.csv").then((data) => {
+    //   const processedRiskData = data.map((d) => ({
+    //     ...d,
+    //     year: +d.year,
+    //     val: +d.val,
+    //     type: "risk",
+    //     metrics: d.metrics,
+    //     cause: d.cause,
+    //   }));
+    //   setLineData((prevData) => [...prevData, ...processedRiskData]);
+    // });
 
     // Load treemap data
     d3.csv("/treemap.csv").then((data) => {
