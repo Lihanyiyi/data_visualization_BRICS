@@ -1,0 +1,29 @@
+type,location,cause,metrics,val
+country,Brazil,Environmental/occupational risks,Number,145042.848365625
+country,Brazil,Environmental/occupational risks,Percent,0.1333263050625
+country,China,Environmental/occupational risks,Number,3167698.77271875
+country,China,Environmental/occupational risks,Percent,0.33566449240625
+country,Egypt,Environmental/occupational risks,Number,140897.027809375
+country,Egypt,Environmental/occupational risks,Percent,0.2888800648125
+country,Ethiopia,Environmental/occupational risks,Number,183667.028528125
+country,Ethiopia,Environmental/occupational risks,Percent,0.2433231350625
+country,India,Environmental/occupational risks,Number,3025846.28384375
+country,India,Environmental/occupational risks,Percent,0.34793688084375
+country,Indonesia,Environmental/occupational risks,Number,385015.6015375
+country,Indonesia,Environmental/occupational risks,Percent,0.25140057325
+country,Islamic Republic of Iran,Environmental/occupational risks,Number,72524.085243125
+country,Islamic Republic of Iran,Environmental/occupational risks,Percent,0.224033524625
+country,Russia,Environmental/occupational risks,Number,299041.79740625
+country,Russia,Environmental/occupational risks,Percent,0.14634312465625
+country,South Africa,Environmental/occupational risks,Number,76418.2006446875
+country,South Africa,Environmental/occupational risks,Percent,0.149193519125
+country,United Arab Emirates,Environmental/occupational risks,Number,2513.19347646875
+country,United Arab Emirates,Environmental/occupational risks,Percent,0.2291562948125
+risk,BRICS,Air pollution,Number,485010.6162674669
+risk,BRICS,Air pollution,Percent,0.139158102325
+risk,BRICS,Non-optimal temperature,Number,84717.22711766156
+risk,BRICS,Non-optimal temperature,Percent,0.033884304871875
+risk,BRICS,Occupational risks,Number,89486.54241861375
+risk,BRICS,Occupational risks,Percent,0.022877589106250002
+risk,BRICS,"Unsafe water, sanitation, and handwashing",Number,114767.99147814864
+risk,BRICS,"Unsafe water, sanitation, and handwashing",Percent,0.036522755331250004
