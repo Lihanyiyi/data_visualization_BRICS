@@ -241,7 +241,7 @@ const FinalProject = () => {
               <li>
                 <strong>Why Environmental/occupational Risks:</strong>{" "}
                 Environmental and occupational risks often pose substantial
-                threats to people's physical health yet are frequently
+                threats to people&apos;s physical health yet are frequently
                 overlooked.
               </li>
               <li>
