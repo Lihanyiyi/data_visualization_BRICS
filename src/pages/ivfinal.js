@@ -202,7 +202,7 @@ const FinalProject = () => {
             <ul className={`text-start mx-auto ${styles.overviewList}`}>
               <li>
                 <strong>What is BRICS?</strong> BRICS is an intergovernmental
-                organization that consists of ten major countries, namely
+                organization that consists of ten major countries, namely{" "}
                 <strong>
                   Brazil, Russia, India, China, South Africa, Egypt, Ethiopia,
                   Indonesia, Iran, and the United Arab Emirates
@@ -211,9 +211,9 @@ const FinalProject = () => {
                 and significant influence globally.
               </li>
               <li>
-                <strong>Why Environmental/occupational Risks:</strong>
+                <strong>Why Environmental/occupational Risks:</strong>{" "}
                 Environmental and occupational risks often pose substantial
-                threats to people's physical health yet are frequently
+                threats to people&apos;s physical health yet are frequently
                 overlooked.
               </li>
               <li>
