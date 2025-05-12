@@ -106,7 +106,7 @@ const FinalProject = () => {
   }, [treemapData, selectedType, selectedMetric]);
 
   const getTreemapTitle = () => {
-    return `Distribution of maternal deaths by ${selectedType} (${selectedMetric})`;
+    return `Distribution of deaths by ${selectedType} (${selectedMetric})`;
   };
 
   const filteredLineData = useMemo(() => {
